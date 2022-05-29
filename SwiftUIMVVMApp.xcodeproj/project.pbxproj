@@ -11,12 +11,15 @@
 		A1A97E802843728800156F0D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E7F2843728800156F0D /* Tests_iOSLaunchTests.swift */; };
 		A1A97E8A2843728800156F0D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E892843728800156F0D /* Tests_macOS.swift */; };
 		A1A97E8C2843728800156F0D /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E8B2843728800156F0D /* Tests_macOSLaunchTests.swift */; };
-		A1A97E8D2843728800156F0D /* SwiftUIMVVMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E652843728700156F0D /* SwiftUIMVVMAppApp.swift */; };
-		A1A97E8E2843728800156F0D /* SwiftUIMVVMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E652843728700156F0D /* SwiftUIMVVMAppApp.swift */; };
+		A1A97E8D2843728800156F0D /* SwiftUIMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E652843728700156F0D /* SwiftUIMVVMApp.swift */; };
+		A1A97E8E2843728800156F0D /* SwiftUIMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E652843728700156F0D /* SwiftUIMVVMApp.swift */; };
 		A1A97E8F2843728800156F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E662843728700156F0D /* ContentView.swift */; };
 		A1A97E902843728800156F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97E662843728700156F0D /* ContentView.swift */; };
 		A1A97E912843728800156F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A97E672843728800156F0D /* Assets.xcassets */; };
 		A1A97E922843728800156F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A97E672843728800156F0D /* Assets.xcassets */; };
+		A1A97EA4284372D900156F0D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97EA3284372D900156F0D /* ContentViewModel.swift */; };
+		A1A97EA92843742900156F0D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97EA82843742900156F0D /* Model.swift */; };
+		A1A97EAC28437EAE00156F0D /* PrimitiveTypes+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97EAB28437EAE00156F0D /* PrimitiveTypes+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A1A97E652843728700156F0D /* SwiftUIMVVMAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMAppApp.swift; sourceTree = "<group>"; };
+		A1A97E652843728700156F0D /* SwiftUIMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMApp.swift; sourceTree = "<group>"; };
 		A1A97E662843728700156F0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1A97E672843728800156F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1A97E6C2843728800156F0D /* SwiftUIMVVMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVVMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +52,9 @@
 		A1A97E852843728800156F0D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A97E892843728800156F0D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A1A97E8B2843728800156F0D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		A1A97EA3284372D900156F0D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		A1A97EA82843742900156F0D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A1A97EAB28437EAE00156F0D /* PrimitiveTypes+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveTypes+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		A1A97E642843728700156F0D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				A1A97E652843728700156F0D /* SwiftUIMVVMAppApp.swift */,
-				A1A97E662843728700156F0D /* ContentView.swift */,
+				A1A97E652843728700156F0D /* SwiftUIMVVMApp.swift */,
+				A1A97EA1284372C300156F0D /* View */,
+				A1A97EA2284372C900156F0D /* ViewModel */,
+				A1A97EA72843741000156F0D /* Model */,
+				A1A97EAA28437EA200156F0D /* Utilities */,
 				A1A97E672843728800156F0D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +148,38 @@
 				A1A97E8B2843728800156F0D /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A1A97EA1284372C300156F0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1A97E662843728700156F0D /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A97EA2284372C900156F0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1A97EA3284372D900156F0D /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1A97EA72843741000156F0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1A97EA82843742900156F0D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1A97EAA28437EA200156F0D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A1A97EAB28437EAE00156F0D /* PrimitiveTypes+Ext.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A97EAC28437EAE00156F0D /* PrimitiveTypes+Ext.swift in Sources */,
 				A1A97E8F2843728800156F0D /* ContentView.swift in Sources */,
-				A1A97E8D2843728800156F0D /* SwiftUIMVVMAppApp.swift in Sources */,
+				A1A97EA92843742900156F0D /* Model.swift in Sources */,
+				A1A97E8D2843728800156F0D /* SwiftUIMVVMApp.swift in Sources */,
+				A1A97EA4284372D900156F0D /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A97E902843728800156F0D /* ContentView.swift in Sources */,
-				A1A97E8E2843728800156F0D /* SwiftUIMVVMAppApp.swift in Sources */,
+				A1A97E8E2843728800156F0D /* SwiftUIMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
